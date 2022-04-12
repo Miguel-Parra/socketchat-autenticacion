@@ -43,9 +43,10 @@ https://node-socketchat.herokuapp.com/
 ## **RECOMENDACIONES**
 
 <br>
+
 Para probar la funcionalidad se puede usar el usuario: miguel2@test.com y la contraseña: 123456
 
-Abrir la consolo del navegador para visualizar los mensajes enviados al chat privado ya que por el momento no se ha diseñado su interfaz. 
+Abrir la consola del navegador para visualizar los mensajes enviados al chat privado ya que por el momento no se ha diseñado su interfaz. 
 
 
 Recuerden reconstruir los módulos de Node con:
