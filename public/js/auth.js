@@ -6,7 +6,7 @@ console.log(localStorage.getItem('correo'));
 //obtener el dominio vinculado
 const url = (location.hostname.includes('localhost'))
     ? 'http://localhost:8080/api/auth/'
-    : 'https://backend-restserver-cafe.herokuapp.com/api/auth/'
+    : 'https://node-socketchat.herokuapp.com/api/auth/'
 console.log(url);
 
 miFormulario.addEventListener('submit', evento => {

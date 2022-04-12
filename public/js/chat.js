@@ -1,7 +1,7 @@
 
 const url = (location.hostname.includes('localhost'))
     ? 'http://localhost:8080/api/auth/'
-    : 'https://backend-restserver-cafe.herokuapp.com/api/auth/'
+    : 'https://node-socketchat.herokuapp.com//api/auth/'
 
 let usuario = null;
 let socket = null;
