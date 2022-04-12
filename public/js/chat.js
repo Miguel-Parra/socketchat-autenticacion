@@ -1,7 +1,7 @@
 
 const url = (location.hostname.includes('localhost'))
     ? 'http://localhost:8080/api/auth/'
-    : 'https://node-socketchat.herokuapp.com//api/auth/'
+    : 'https://node-socketchat.herokuapp.com/api/auth/'
 
 let usuario = null;
 let socket = null;
@@ -18,14 +18,14 @@ const validarJWT = async () => {
     try {
         const token = localStorage.getItem('token') || '';
         if (token <= 10) {
-            window.location = 'index.html';
+            // window.location = 'index.html';
             throw new Error('No hay token en el servidor');
         }
         const respuesta = await fetch(url, {
             headers: { 'x-token': localStorage.getItem('token') }
         });
         if (!respuesta.ok) {
-            window.location = 'index.html';
+            // window.location = 'index.html';
             throw "No se pudo hacer la peticion"
         }
         const { usuario: userDB, token: tokenDB } = await respuesta.json();
